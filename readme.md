@@ -5,7 +5,6 @@ This is my language list app: I've made it as a trial run of a database-backed v
 ## List of things to do:
 
 * Prettify
-  * Bootstrap
   * Eventually Handmade
 
 * Implement AJAX for the PHP functions
