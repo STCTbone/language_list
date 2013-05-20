@@ -1,9 +1,4 @@
-<html>
-<head>
-  <title>My Web Languages</title>
-  <link rel="stylesheet" type="text/css" href="index.css">
-</head>
-<body>
+<?php require 'header.php';?>
   <h1>My Programming Languages</h1>
   <div class="lang_table float">
     <table>
@@ -41,5 +36,4 @@
       <input type="submit" value="Submit New Language">
     </form>
   </div>
-</body>
-</html>
+<?php require 'footer.php';?>
