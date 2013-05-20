@@ -30,7 +30,16 @@
           for ($i=0; $i < $num_rows; $i++) { 
             $row_known = $result_known->fetch_assoc();
             $row_unknown = $result_unknown->fetch_assoc();
-            echo "<tr><td>".$row_known['name']."<a href=\"switch_know.php?id=".$row_known['id']."\">>></a></td><td>".$row_unknown['name']."<a href=\"switch_know.php?id=".$row_unknown['id']."\"><<</a></td></tr>";
+            echo "<tr><td>".$row_known['name'];
+            if ($row_known) {
+              echo " <a href=\"switch_know.php?id=".$row_known['id']."\">>></a>";
+            }
+
+            echo "</td><td>".$row_unknown['name'];
+            if ($row_unknown) {
+              echo " <a href=\"switch_know.php?id=".$row_unknown['id']."\"><<</a>";
+            }
+            echo "</td></tr>";
           }
         ?>
     </table>
